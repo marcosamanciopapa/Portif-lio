@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== FONT AWESOME ==== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ===== CSS ==== -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/carcaju_sombra.png">
+    <title>Marcos Papa</title>
+</head>
+<body>
+    <!-- ==CONTAINER -->
+    <div class="container">
+
+        <!-- Language -->
+        <div class="language">
+            <a href="./index.html" class="language__link">
+                <img src="./images/brazilFlag.jpg" class="language__image">
+            </a>
+        </div>
+
+        <!-- ===== MAIN MENU ==== -->
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item menu__item--image"><img src="./images/foto4.png"class="menu__image"></li>
+                <li class="menu__item">
+                    <a href="#i_am" class="menu__link">
+                        <div class="item__box">
+                            <i class=" menu__icon fa fa-home"></i>
+                            <span>HOME</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#about" class="menu__link">
+                        <div class="item__box">
+                            <i class=" menu__icon fa fa-user"></i>
+                            <span>ABOUT ME</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#projects" class="menu__link">
+                        <div class="item__box">
+                            <i class="  menu__icon fa fa-eye"></i>
+                            <span>PROJECTS</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#contact" class="menu__link">
+                        <div class="item__box">
+                            <i class="  menu__icon fa fa-envelope"></i>
+                            <span>CONTACT</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="menu__item menu__item--flag">
+                    <a href="./index.html" class="menu__link">
+                        <img src="./images/brazilFlag.jpg" alt="Brazilian flag" class="menu__flag">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- ===== I am ==== -->
+        <section class="i_am" id="i_am">
+            <div class="i_am__title_box">
+                <span class="i_am__title" data-text1>Marcos</span>
+                <span class="i_am__title" data-text2>Papa</span>
+            </div>
+            <h6 class="i_am__caption" data-text3>Front-End freelancer</h6>
+            <div class="i_am__photo_video">
+                <img src="./images/foto4.png" alt="Foto de Marcos Papa" class="i_am__image is-hidden opacity" data-photo>
+                <video  muted autoplay class="i_am__video" data-video>
+                    <source src="./images/carcaju_pretoEbranco.mp4">
+                </video>
+            </div>  
+        </section>
+
+        <!-- ===== About ==== -->
+
+        <section class="about" id="about">
+            <div class="about__box">
+                <h2 class="animate__title" data-animate>About me</h2>
+                <p class="about__text" data-animate>
+                    Front-End developer graduated in Technology in Systems Analysis and Development by UNIFRAN. Technician in Business Management by SENAC-MG. I took several preparatory and professional improvement courses through UDEMY, ORIGAMID, CFB Cursos and Curso em Vídeo. 
+                </p>
+            </div>
+
+            <div class="about__box">
+                <h3 class="animate__title animate__title--less" data-animate>
+                    My Skills
+                </h3>
+
+                <div class="skills">
+                    <h6 class="skills__label">HTML</h6>
+                    <div class="skill_out">
+                        <div class="skill_in" data-skill ="html"></div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h6 class="skills__label">CSS</h6>
+                    <div class="skill_out">
+                        <div class="skill_in" data-skill ="css"></div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h6 class="skills__label">JavaScript</h6>
+                    <div class="skill_out">
+                        <div class="skill_in" data-skill ="js"></div>
+                    </div>
+                </div>
+
+
+                <a href="./resume/currículo_portugues.docx" class="resume">
+                    <i class="fa fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+        </section>
+
+         <!-- ===== PROJECTS ==== --> 
+            
+         <section class="projects" id="projects">
+            <div class="projects__box">
+                <h2 class="animate__title" data-animate>Projects</h2>
+                <div class="projects__field">
+
+                    <div class="field__box" data-field-box>
+                        <a href="https://chipper-mooncake-77b378.netlify.app/" class="projects__link" target="_blank"><img src="./images/ghost2.png" alt="Link para o projeto Caça-Fantasmas" class="projects__image" title="caça-fantasmas"></a>
+                        <h4 class="field__caption">Ghostbusters</h4>
+                    </div>
+
+                    <div class="field__box" data-field-box>
+                        <a href="https://marcosamanciopapa.github.io/nuCopy/" class="projects__link" target="_blank" title="Nubank"><img src="./images/nubank2.png" alt="Link para o projeto Nubank Copy" class="projects__image"></a>
+                        <h4 class="field__caption">Nubank Copy</h4>
+                    </div>
+
+                    <div class="field__box" data-field-box>
+                        <a href="https://marcosamanciopapa.github.io/modalResponsivo/" class="projects__link" target="_blank" title="Modal Responsivo"><img src="./images/woman3.png" alt="Link para o projeto Modal Responsivo" class="projects__image"></a>
+                        <h4 class="field__caption">Responsive Modal</h4>
+                    </div>
+
+                    <div class="field__box" data-field-box>
+                        <a href="https://marcosamanciopapa.github.io/Parque-das-aguas/" class="projects__link" target="_blank" title="Parque das águas"><img src="./images/parque_das_aguas2.png" alt="Link para o projeto Parque das águas" class="projects__image"></a>
+                        <h4 class="field__caption">Water Park</h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact__box">
+                <h2 class="animate__title" data-animate>Contact</h2>
+                <div class="contact__item contact__item--first">
+                    <div class="contact__subox1" data-animate>
+                        <i class="fa fa-map-marker contact__icon"></i>
+                    </div>
+                    <div class="contact__subox2" data-animate>
+                        <p class="contact__parag">Araxá, MG, Brazil</p>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <div class="contact__subox1" data-animate>
+                        <i class="fa fa-envelope contact__icon"></i>
+                    </div>
+                    <div class="contact__subox2" data-animate>
+                        <p class="contact__parag">marcos_papa@hotmail.com</p>
+                    </div>    
+                </div>
+
+                <div class="contact__item">
+                    <div class="contact__subox1" data-animate>
+                        <a href="https://wa.me/5534988847402?text=Ola%20gostaria%20de%20um%20orçamento." target="_blank" class="contact__wtsap"><i class="fa fa-whatsapp contact__icon"></i></a>
+                    </div>
+                    <div class="contact__subox2" data-animate>
+                        <p class="contact__parag">+55 34 98884-7402</p>
+                    </div>    
+                </div>
+
+                <h6 class="contact__form_title" data-animate>Let's talk. Send me a message:</h6>
+
+                <form id="message" action="https://formsubmit.co/marcos_papa@hotmail.com" method="POST">
+
+                    <input type="text" name="name" placeholder="Name" required class="message__input">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/thankspage.html">
+                    <input type="email" name="email" placeholder="Email" required class="message__input">
+                    <input type="text" name="subject" placeholder="Subject Matter" required class="message__input">
+                    <textarea cols="30" rows="5" name="message" placeholder="Type your message here" required class="message__textarea"></textarea>
+                    <button type="submit"><i class="fa fa-paper-plane send_icon"></i>Send</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </div>  <!-- == END OF CONTAINER -->
+
+    <!-- ==== Javascript ==== -->
+    <script type='module' src="./javascript/main.js"></script>
+
+</body>
+</html>

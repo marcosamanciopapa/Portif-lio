@@ -1,0 +1,402 @@
+/* ===== Language =====*/
+
+.language{
+    display: flex;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.language__image{
+    width: 35px;
+    height: 20px;
+}
+
+
+/* ===== MENU =====*/
+.menu__list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__image{
+    width: 100%;
+}
+
+.menu__link{
+    color: white;
+}
+
+.menu__link:hover{
+    color: #505050;
+}
+
+.item__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu__icon{
+    font-size: 1.8rem;
+}
+
+.menu__link span{
+    font-size: 0.9rem;
+    margin-top: 3px;
+}
+
+.menu__item--flag{
+    display: none;
+}
+
+/* ===== I AM =====*/
+
+@keyframes down_text{
+    from{
+        top: -1000px;
+    }
+    to{
+        top: 0;
+    }
+}
+
+@keyframes show_image{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.i_am__title{
+    font-size: 3.8rem;
+    line-height: 96px;
+    font-family: Montserrat-Light;
+    font-weight: 400;
+    position: relative;
+    top: -1000px;
+}
+
+.i_am__title ~ .i_am__title{
+    margin-left: 10px;
+}
+
+.i_am__caption{
+    font-size: 1rem;
+    line-height: 23px;
+    font-weight: 400;
+    font-family: Montserrat-Light;
+    margin: 5px 0 30px 0;
+    position: relative;
+    top: -1000px;
+}
+
+.i_am__photo_video{
+    width: 400px;
+    height: 400px;
+}
+
+.i_am__video{
+    width: 100%;
+    height: 100%;
+}
+
+.i_am__image{
+    width: 100%;
+    height: 100%;
+    animation: show_image 1s ease-in forwards;
+}
+
+/*==== ABOUT ====*/
+
+.about__box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.animate__title{
+    width: max-content;
+    font-size: 2rem;
+    line-height: 46px;
+    font-family: Montserrat-Light;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    margin-top: 10vh;
+    opacity: 0;
+    position: relative;
+    left: -50px;
+    transition: all 1s ease;
+}
+
+.animate__title--less{
+    border: none;
+    font-size: 1.5rem;
+    line-height: 36px;
+    opacity: 0;
+    position: relative;
+    left: -50px;
+    transition: all 1s ease;
+}
+
+.about__text{
+    margin-top: 5vh;
+    font-size: 1rem;
+    font-family: Montserrat-Light;
+    line-height: 2rem;
+    color: #505050;
+    text-align: justify;
+    opacity: 0;
+    position: relative;
+    left: -50px;
+    transition: all 1s ease;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__label{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: Montserrat-Light;
+    color: #505050;
+    margin: 20px 0 10px 0;
+}
+
+.skill_out{
+    width: 100%;
+    background-color: white;
+    height: 2rem;
+}
+
+.skill_in{
+    width: 0;
+    background-color:#505050;
+    height: 2rem;
+    transition: all 1.5s ease;
+}
+
+.animate-bar-html{
+    width:85%;
+}
+.animate-bar-css{
+    width:80%;
+}
+.animate-bar-js{
+    width:90%;
+}
+.animate-bar-photo{
+    width:60%;
+}
+.animate-bar-illustra{
+    width:50%;
+}
+
+.resume{
+    color: black;
+    background-color: white;
+    margin-top: 30px;
+    padding: 5px 15px;
+    width: max-content;
+    font-size: 1rem;
+    line-height: 2rem;
+    transition: all .5s ease-in;
+}
+
+.resume:hover{
+    background-color: #505050;
+    color: white;
+}
+
+/*==== PROJECTS ====*/
+
+.projects__box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.projects__field{
+    display: flex;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
+
+.field__box{
+    width: 50%;
+    height: 60vh;
+    padding: 10px;
+    margin-bottom: 5vh;
+    transform: scale(0);
+}
+
+.projects__image{
+    width: 100%;
+    height: 100%;
+}
+
+.field__caption{
+    font-size: 1.3rem;
+    font-family: Montserrat-Light;
+    line-height: 2rem;
+    text-align: center;
+}
+
+@keyframes enlarge_image{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.enlarge_image{
+    animation: enlarge_image 1s ease forwards;
+}
+
+/*==== CONTACT ====*/
+
+.contact__box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.contact__item{
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+.contact__item ~ .contact__item{
+    margin-top: 5vh;
+}
+
+.contact__item--first{
+    margin-top: 10vh;
+}
+
+.contact__subox1{
+    width: 5vw;
+    position: relative;
+    opacity: 0;
+    left: -50px;
+    transition: all 1s ease;
+}
+
+.contact__subox2{
+    width: max-content;
+    position: relative;
+    opacity: 0;
+    left: -50px;
+    transition: all 1s ease;
+}
+
+.contact__icon{
+    font-size: 2rem;
+}
+
+.contact__parag{
+    font-size: 1rem;
+    font-family: Montserrat-Light;
+    line-height: 1.5rem;
+    color: #505050;
+}
+
+.contact__wtsap{
+    color: #b1caa2;
+}
+
+.contact__form_title{
+    font-size: 1rem;
+    font-family: Montserrat-Light,sans-serif;
+    line-height: 1.5rem;
+    color: #505050;
+    margin-top: 15vh;
+    position: relative;
+    left: -50px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+#message{
+    display: flex;
+    flex-direction: column;
+}
+
+.message__input{
+    padding: 20px;
+    margin-top: 3vh;
+}
+
+.message__textarea{
+    margin: 3vh 0;
+    padding: 20px;
+}
+
+#message input::placeholder , #message textarea::placeholder{
+    font-size: 1rem;
+    font-family: Montserrat-Light,sans-serif;
+    color: #505050;
+}
+
+#message button{
+    padding: 10px;
+    width: 10vw;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    word-spacing: 5px;
+    cursor: pointer;
+}
+
+.send_icon{
+    margin-right: 5px;
+}
+
+/*==== Thanks page ====*/
+
+.thanks{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks__title{
+    font-size: 1.7rem;
+    color: white;
+    padding: 5px;
+    font-family: Montserrat,sans-serif;
+    position: relative;
+    top: -1000px;
+}
+
+.thanks__box{
+    height: 60vh;
+    width: 30vw;
+    margin-top: 5vh;
+}
+
+.thanks__image{
+    width: 100%;
+    height: 100%;
+}

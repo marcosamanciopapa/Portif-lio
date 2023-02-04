@@ -1,0 +1,24 @@
+.is-hidden{
+    display: none;
+}
+
+.opacity{
+    opacity: 0;
+}
+
+.align_element{
+    left: 0;
+    opacity: 1;
+}
+
+.down_text1{
+    animation: down_text 1s forwards;
+}
+
+.down_text2{
+    animation: down_text 1.5s forwards;
+}
+
+.down_text3{
+    animation: down_text 2s forwards;
+}
